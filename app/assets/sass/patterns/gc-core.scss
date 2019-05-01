@@ -22,7 +22,7 @@ $govuk-blue: #005ea5;
 
 
 
-.gc-pull-right{float: right;}
+
 .gc-clear-left{clear: left !important;}
 .gc-text-grey{ color: govuk-colour(grey-1)}
 .gc-logo-image{max-width: 200px;}
@@ -349,3 +349,25 @@ html[data-useragent*='MSIE 10.0'] .flex-container {
 
 
 .gc-list--alpha{list-style-type: lower-alpha; margin-left: 22px;}
+
+
+.gc-no-border {
+  border-bottom: none;
+  
+.gc-pull-right{text-align: right;float: right;}
+
+.gc-hero {
+  background: #3d4d76;
+  padding: 45px 0px;
+  margin-bottom: 20px;
+
+  .govuk-heading-xl, .govuk-heading-l,.govuk-heading-m,.govuk-heading-s {
+    margin-bottom: 30px;
+  }
+
+  .govuk-heading-xl, .govuk-heading-l,.govuk-heading-m,.govuk-heading-s, .govuk-body-l, .govuk-body {
+    color: #fff;
+  }
+
+  .govuk-button{ background: #fff; color: #000; font-weight: 700; font-size: 24px; line-height:1.25}
+}
