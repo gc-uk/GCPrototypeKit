@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      <h1 class="govuk-heading-xl">
+        The Gambling Commission digital services prototype kit
+      </h1>
+      <p>
+        This kit lets you rapidly create HTML prototypes of services using the  <a href="https://design-system.service.gov.uk" target="_blank">
+          GOV.UK Design System
+        </a> patterns and components as well as Gambling Commission specific components and patterns.
+      </p>
+
+      <p>
+        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+      </p>
+
+      <p>
+        Changes should be managed through the <a href="https://github.com/gc-uk/GCPrototypeKit" target="_blank">GCPrototypeKit GitHub project</a>.  
+      </p>
+
+      <h2 class="govuk-heading-m">Do not use this service to:</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Build production/live services</li>
+        
+      </ul>
+    </div>
+</div>
+
+{% endblock %}
