@@ -371,3 +371,24 @@ html[data-useragent*='MSIE 10.0'] .flex-container {
 
   .govuk-button{ background: #fff; color: #000; font-weight: 700; font-size: 24px; line-height:1.25}
 }
+
+.gc-product-layout{
+  .gc-product-page--header {
+    background: $gcebonyshade;
+    margin-top: 20px;
+    margin-bottom: -25px;
+    padding-bottom: 40px;
+    .govuk-heading-l, .govuk-body-l, .govuk-body, .govuk-breadcrumbs__list-item, .govuk-breadcrumbs__link{color: $white;}
+    .govuk-heading-l{ font-size: 48px;}
+  
+    
+  }
+  
+   .govuk-header__content{text-align: right;}
+  }
+  
+  .gc-tag-discovery{ background: #912b87;}
+  .gc-tag-alpha{ background: #d43880;}
+  .gc-tag-beta{ background: #f16b20;}
+  .gc-tag-live{ background: #85994a;}
+  
