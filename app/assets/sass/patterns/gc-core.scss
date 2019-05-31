@@ -1,3 +1,6 @@
+// This has started to be split into pattern files and BEM format. 
+// Speak to Andy Williams-Jones if you change this
+
 $black: #0b0c0c;
 $grey-1: #6f777b;
 $grey-2: #bfc1c3;
@@ -22,6 +25,9 @@ $govuk-blue: #005ea5;
 
 
 
+.gc-pull-right {
+  float: right;
+}
 
 .gc-clear-left {
   clear: left !important;
@@ -169,6 +175,13 @@ $govuk-blue: #005ea5;
 
 .gc-panel--success {
   border: 5px solid $gcapple;
+  padding: 15px;
+  box-shadow: none;
+  background: $white
+}
+
+.gc-panel--warning {
+  border: 5px solid $govuk-error-colour;
   padding: 15px;
   box-shadow: none;
   background: $white
@@ -388,85 +401,16 @@ html[data-useragent*='MSIE 10.0'] .flex-container {
   margin-left: 22px;
 }
 
+.gc-table__row--total {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
 
-.gc-no-border {
-  border-bottom: none;
-
-  .gc-pull-right {
-    text-align: right;
-    float: right;
-  }
-
-  .gc-hero {
-    background: #3d4d76;
-    padding: 45px 0px;
-    margin-bottom: 20px;
-
-    .govuk-heading-xl,
-    .govuk-heading-l,
-    .govuk-heading-m,
-    .govuk-heading-s {
-      margin-bottom: 30px;
-    }
-
-    .govuk-heading-xl,
-    .govuk-heading-l,
-    .govuk-heading-m,
-    .govuk-heading-s,
-    .govuk-body-l,
-    .govuk-body {
-      color: #fff;
-    }
-
-    .govuk-button {
-      background: #fff;
-      color: #000;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.25
-    }
+  .govuk-table__cell {
+    font-weight: 700
   }
 }
 
-.gc-product-layout {
-  .gc-product-page--header {
-    background: $gcebonyshade;
-    margin-top: 20px;
-    margin-bottom: -25px;
-    padding-bottom: 40px;
-
-    .govuk-heading-l,
-    .govuk-body-l,
-    .govuk-body,
-    .govuk-breadcrumbs__list-item,
-    .govuk-breadcrumbs__link {
-      color: $white;
-    }
-
-    .govuk-heading-l {
-      font-size: 48px;
-    }
-
-
-  }
-
-  .govuk-header__content {
-    text-align: right;
-  }
-}
-
-.gc-tag-discovery {
-  background: #912b87;
-}
-
-.gc-tag-alpha {
-  background: #d43880;
-}
-
-.gc-tag-beta {
-  background: #f16b20;
-}
-
-.gc-tag-live {
-  background: #85994a;
+.gc-table__meta{
+  font-weight: 400;
+  color: $grey-1;
 }
